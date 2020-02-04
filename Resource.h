@@ -4,15 +4,16 @@
 //1. 그래픽 변경
 //2. 코드의 구버전(레거시) 자료를 모던 스타일로 변경하면서 작업.
 #pragma once
-#include <windows.h>
-
 #include <dxgi1_4.h>	
 #include <d3d12.h>
 #include <d3dcompiler.h>
 #include <DirectXMath.h>		//얘가 있어야 DirectX 네임스페이스 사용 가능.
 
+//Win API
+#include <windows.h>
 #include <wrl.h>
 #include <shellapi.h>
+
 
 #include <vector>
 #include <sstream>
