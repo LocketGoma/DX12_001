@@ -9,7 +9,7 @@
 //
 //*********************************************************
 
-#include "Win32Application.h"
+#include "Win32Application.h"           //아니 그래서 이게 뭔데.
 
 HWND Win32Application::m_hwnd = nullptr;
 
@@ -17,7 +17,7 @@ int Win32Application::Run(DXSample* pSample, HINSTANCE hInstance, int nCmdShow)
 {
     // Parse the command line parameters
     int argc;
-    LPWSTR* argv = CommandLineToArgvW(GetCommandLineW(), &argc);
+    LPWSTR * argv = CommandLineToArgvW(GetCommandLineW(), &argc);       //스마트 포인터 적용 못하겠는데?
     pSample->ParseCommandLineArgs(argv, argc);
     LocalFree(argv);
 
