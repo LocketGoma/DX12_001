@@ -12,6 +12,7 @@
 #pragma once
 
 #include "Resource.h"
+#include "DXSample.h"
 
 class DXSample;
 
