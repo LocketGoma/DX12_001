@@ -8,6 +8,7 @@
 #include <d3d12.h>
 #include <d3dcompiler.h>
 #include <DirectXMath.h>		//얘가 있어야 DirectX 네임스페이스 사용 가능.
+#include "d3dx12.h"				//이게 있어야 CD3DX12 계열사용 가능. (사실상)외부 라이브러리임에 주의.
 
 //Win API
 #include <windows.h>

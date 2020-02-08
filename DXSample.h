@@ -11,8 +11,10 @@
 
 #pragma once
 
+#include "Resource.h"
 #include "DXSampleHelper.h"
 #include "Win32Application.h"
+
 
 class DXSample
 {
