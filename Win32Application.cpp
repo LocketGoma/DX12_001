@@ -8,7 +8,7 @@
 // PURPOSE, MERCHANTABILITY, OR NON-INFRINGEMENT.
 //
 //*********************************************************
-//https://hannom.tistory.com/121?category=525481
+
 #include "Win32Application.h"           //아ㅋㅋㅋㅋㅋ 그냥 Win 32 기반 표준 콘솔 응용프로그램 ㅋㅋㅋㅋㅋㅋㅋㅋ
 
 HWND Win32Application::m_hwnd = nullptr;
