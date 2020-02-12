@@ -4,6 +4,9 @@
 //Public
 
 //아니 이거 구조 왜이래?
+//= 기본 생성자 스타일임.
+//초반에서 각각의 생성자를 '기본값 설정' (이니셜라이즈) 해주는 작업.
+//근데 요즘은 이렇게도 안하고 이니셜라이즈 함수를 새로 만들어서 쓴다던데?
 MultiadapterTwit::MultiadapterTwit(int width, int height, LPCWSTR name) :
     DXSample(width, height, name),
     m_frameIndex(0),
