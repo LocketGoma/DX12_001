@@ -152,7 +152,6 @@ class MultiadapterTwit : public DXSample
 		UINT64 m_directCommandQueueTimestampFrequencies[GraphicsAdaptersCount];
 
 		//Private ÇÔ¼öºÎ
-
 		HRESULT GetHardwareAdapters(_In_ IDXGIFactory2* pFactory, _Outptr_result_maybenull_ IDXGIAdapter1** ppPrimaryAdapter, _Outptr_result_maybenull_ IDXGIAdapter1** ppSecondaryAdapter);
 		void LoadPipeline();
 		void LoadAssets();

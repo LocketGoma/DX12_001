@@ -32,3 +32,12 @@ MultiadapterTwit::MultiadapterTwit(int width, int height, LPCWSTR name) :
 {
     m_constantBufferData.resize(MaxBirdCount);
 }
+
+void MultiadapterTwit::OnInit() {
+    LoadPipeline();
+    LoadAssets();
+    UpdateWindowTitle();       
+}
+//이미 선언되어있다구요?
+//_Use_decl_annotations_
+//HRESULT MultiadapterTwit::GetHardwareAdapters(IDXGIFactory2* pFactory, IDXGIAdapter1** ppPrimaryAdapter, IDXGIAdapter1** ppSecondaryAdapter)

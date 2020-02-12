@@ -15,7 +15,6 @@
 #include <wrl.h>
 #include <shellapi.h>
 
-
 #include <vector>
 #include <sstream>
 
