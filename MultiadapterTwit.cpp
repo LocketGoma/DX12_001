@@ -38,6 +38,27 @@ void MultiadapterTwit::OnInit() {
     LoadAssets();
     UpdateWindowTitle();       
 }
-//이미 선언되어있다구요?
-//_Use_decl_annotations_
-//HRESULT MultiadapterTwit::GetHardwareAdapters(IDXGIFactory2* pFactory, IDXGIAdapter1** ppPrimaryAdapter, IDXGIAdapter1** ppSecondaryAdapter)
+//이미 선언되어있다구요? 아닌데?
+_Use_decl_annotations_
+HRESULT MultiadapterTwit::GetHardwareAdapters(IDXGIFactory2* pFactory, IDXGIAdapter1** ppPrimaryAdapter, IDXGIAdapter1** ppSecondaryAdapter)
+{
+    if (pFactory == nullptr)
+    {
+        return E_POINTER;
+    }
+    //머 E_POINTER 면 포인터 에러겠고...
+
+    // Adapter 0 is the adapter that Presents frames to the display. It is assigned as
+    // the "secondary" adapter because it is the adapter that performs the second set
+    // of operations (the blur effect) in this sample.
+    // Adapter 1 is an additional GPU that the app can take advantage of, but it does
+    // not own the presentation step. It is assigned as the "primary" adapter because
+    // it is the adapter that performs the first set of operations (rendering triangles)
+    // in this sample.
+
+    ThrowIfFailed(pFactory->EnumAdapters1(0, ppSecondaryAdapter));
+    ThrowIfFailed(pFactory->EnumAdapters1(1, ppPrimaryAdapter));
+
+    //정상 = 에러 값 0
+    return S_OK;
+}
