@@ -28,7 +28,7 @@ class MultiadapterTwit : public DXSample
 		static const UINT WindowTextUpdateFrequency = 20;	//텍스트 변경 빈도.. 텍스트? 아 이거 윈도우 타이틀 업데이트...
 		static const UINT MaxBirdCount = 15000;	//최대 오브젝트 수. 새를 날릴거니까 'Bird' 
 		static const float ClearColor[4];		//R G B A
-		static const float BirdHalfWidth;		//중간지점? 아니면 오브젝트 길이?
+		static const float BirdHalfWidth;		//오브젝트 길이!
 		static const float BirdDepth;			//오브젝트의 Z축 값.
 
 		//비 Static 변수들. 

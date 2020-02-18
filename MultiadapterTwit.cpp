@@ -501,6 +501,7 @@ void MultiadapterTwit::LoadAssets()
         psoDesc.BlendState = CD3DX12_BLEND_DESC(D3D12_DEFAULT);
         psoDesc.DepthStencilState = CD3DX12_DEPTH_STENCIL_DESC(D3D12_DEFAULT);
         psoDesc.SampleMask = UINT_MAX;
+        //타입 설정
         psoDesc.PrimitiveTopologyType = D3D12_PRIMITIVE_TOPOLOGY_TYPE_TRIANGLE;
         psoDesc.NumRenderTargets = 1;
         psoDesc.RTVFormats[0] = DXGI_FORMAT_R8G8B8A8_UNORM;
@@ -537,12 +538,15 @@ void MultiadapterTwit::LoadAssets()
     // Create the vertex buffer for the primary adapter.
     {
         // Define the geometry for a triangle.
+        // 여기가 삼각형 생성 부분.
         Vertex triangleVertices[] =
         {
-            { { 0.0f, BirdHalfWidth, BirdDepth } },
-            { { BirdHalfWidth, -BirdHalfWidth, BirdDepth } },
+            { { -BirdHalfWidth, BirdHalfWidth, BirdDepth } },
+            { { BirdHalfWidth, BirdHalfWidth, BirdDepth } },
             { { -BirdHalfWidth, -BirdHalfWidth, BirdDepth } }
+            //{ { BirdHalfWidth, -BirdHalfWidth, BirdDepth } }
         };
+
 
         const UINT vertexBufferSize = sizeof(triangleVertices);
 
