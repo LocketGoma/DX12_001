@@ -350,6 +350,7 @@ struct CD3DX12_RASTERIZER_DESC : public D3D12_RASTERIZER_DESC
     {}
     explicit CD3DX12_RASTERIZER_DESC(CD3DX12_DEFAULT)
     {
+        //임의 수정 불가능. d3d12.h에 접근하게되어서 수정 불가.
         FillMode = D3D12_FILL_MODE_SOLID;
         CullMode = D3D12_CULL_MODE_BACK;
         FrontCounterClockwise = FALSE;
@@ -2465,7 +2466,8 @@ struct CD3DX12_PIPELINE_STATE_STREAM_PARSE_HELPER : public ID3DX12PipelineParser
         : SeenDSS(false)
     {
         // Adjust defaults to account for absent members.
-        PipelineStream.PrimitiveTopologyType = D3D12_PRIMITIVE_TOPOLOGY_TYPE_TRIANGLE;
+        // 바꿔도 되나?
+        PipelineStream.PrimitiveTopologyType = D3D12_PRIMITIVE_TOPOLOGY_TYPE_PATCH;
 
         // Depth disabled if no DSV format specified.
         static_cast<D3D12_DEPTH_STENCIL_DESC1&>(PipelineStream.DepthStencilState).DepthEnable = false;
@@ -3456,6 +3458,3 @@ private:
 #endif // defined( __cplusplus )
 
 #endif //__D3DX12_H__
-
-
-
