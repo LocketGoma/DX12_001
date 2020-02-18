@@ -1,5 +1,5 @@
-//DX12 Start : F:\Programing\Usage\VS2019\DirectX-Graphics-Samples-master\Samples\Desktop\D3D12HeterogeneousMultiadapter\src
-//https://github.com/microsoft/DirectX-Graphics-Samples/tree/master/Samples/Desktop/D3D12HeterogeneousMultiadapter
+//DX12 Start : F:\Programing\Usage\VS2019\DirectX-Graphics-Samples-master\Samples\Desktop\MultiadapterTwit\src
+//https://github.com/microsoft/DirectX-Graphics-Samples/tree/master/Samples/Desktop/MultiadapterTwit
 //해당 프로젝트의 그래픽을 삼각형 -> '트위터 새 모양'으로 바꾸기
 //1. 그래픽 변경
 //2. 코드의 구버전(레거시) 자료를 모던 스타일로 변경하면서 작업.
