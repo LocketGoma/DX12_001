@@ -7,6 +7,9 @@
 //= 기본 생성자 스타일임.
 //초반에서 각각의 생성자를 '기본값 설정' (이니셜라이즈) 해주는 작업.
 //근데 요즘은 이렇게도 안하고 이니셜라이즈 함수를 새로 만들어서 쓴다던데?
+const float MultiadapterTwit::BirdHalfWidth = 0.025f;
+const float MultiadapterTwit::BirdDepth = 1.0f;
+const float MultiadapterTwit::ClearColor[4] = { 0.0f, 0.2f, 0.3f, 1.0f };
 
 
 MultiadapterTwit::MultiadapterTwit(int width, int height, LPCWSTR name) :
