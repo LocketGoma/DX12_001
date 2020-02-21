@@ -45,9 +45,11 @@ class MultiadapterTwit : public DXSample
 
 
 		//구조체
+		//버텍스 1개짜리 생성
 		struct Vertex {
 			XMFLOAT3 position;
 		};
+		//이건 머임 값이 4개나 들어가는데?
 		struct VertexPositionUV {		//UV?
 			XMFLOAT4 position;
 			XMFLOAT2 uv;
@@ -55,7 +57,7 @@ class MultiadapterTwit : public DXSample
 		// Constant buffer definitions.
 		struct SceneConstantBuffer
 		{
-			XMFLOAT4 velocity;			//속도
+			XMFLOAT4 velocity;			//속도 - 뭐 쿼터니언 벡터겠지?
 			XMFLOAT4 offset;			//offset
 			XMFLOAT4 color;				//색상
 			XMFLOAT4X4 projection;		//? 투명도?
@@ -93,8 +95,8 @@ class MultiadapterTwit : public DXSample
 
 		//그 외
 			// Pipeline objects.
-		CD3DX12_VIEWPORT m_viewport;			//니들
-		CD3DX12_RECT m_scissorRect;				//뭐냐
+		CD3DX12_VIEWPORT m_viewport;			//뷰포트 관련
+		CD3DX12_RECT m_scissorRect;				//이건 뭐죠 잘라내기?
 		UINT m_rtvDescriptorSizes[GraphicsAdaptersCount];
 		UINT m_srvDescriptorSizes[GraphicsAdaptersCount];
 		DXGI_ADAPTER_DESC1 m_adapterDescs[GraphicsAdaptersCount];
