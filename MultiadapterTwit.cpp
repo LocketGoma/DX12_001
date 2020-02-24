@@ -509,6 +509,8 @@ void MultiadapterTwit::LoadAssets()
         psoDesc.SampleDesc.Count = 1;
         ThrowIfFailed(m_devices[Primary]->CreateGraphicsPipelineState(&psoDesc, IID_PPV_ARGS(&m_pipelineState)));
 
+        //버텍스쪽 잘못 건들면 여기 못들어오고 터짐. 위에 ThrowIfFailed에서 덜컥 걸림
+        //사유 : 님 인자 더 넣으셨는데요?
         psoDesc.InputLayout = { blurInputElementDescs, _countof(blurInputElementDescs) };
         psoDesc.pRootSignature = m_blurRootSignature.Get();
         psoDesc.VS = CD3DX12_SHADER_BYTECODE(vertexShaderBlur.Get());
