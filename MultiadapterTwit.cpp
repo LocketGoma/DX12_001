@@ -549,6 +549,13 @@ void MultiadapterTwit::LoadAssets()
             //{ { BirdHalfWidth, -BirdHalfWidth, BirdDepth } }
         };
 
+        Vertex triangleVerticesLow[] =
+        {
+            { { BirdHalfWidth, BirdHalfWidth, BirdDepth } },
+            { { -BirdHalfWidth, -BirdHalfWidth, BirdDepth } },
+            { { BirdHalfWidth, -BirdHalfWidth, BirdDepth } }
+        };
+
 
         const UINT vertexBufferSize = sizeof(triangleVertices);
 
