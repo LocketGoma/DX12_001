@@ -944,6 +944,8 @@ void MultiadapterTwit::OnUpdate()
         for (UINT n = 0; n < m_BirdCount; n++)
         {
             // Animate the triangles.
+            // 여기가 최종적으로 그려주는 부분인가?
+            // 아니네 여긴 현재위치... 같은데?
             m_constantBufferData[n].offset.x += m_constantBufferData[n].velocity.x;
             if (m_constantBufferData[n].offset.x > offsetBounds)
             {
@@ -958,6 +960,7 @@ void MultiadapterTwit::OnUpdate()
 }
 
 // Render the scene.
+// 씬 랜더러
 void MultiadapterTwit::OnRender()
 {
     // Record all the commands we need to render the scene into the command lists.
