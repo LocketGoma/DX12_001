@@ -23,3 +23,5 @@ using namespace DirectX;
 
 //참고자료
 //https://hannom.tistory.com/121?category=525481
+//https://hannom.tistory.com/133?category=525481
+//http://www.directxtutorial.com/Lesson.aspx?lessonid=11-4-5
