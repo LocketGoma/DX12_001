@@ -45,11 +45,11 @@ class MultiadapterTwit : public DXSample
 
 
 		//구조체
-		//버텍스 1개짜리 생성
+		//버텍스 생성, 값 3개씩 들어감. 아무튼 삼각형임.
 		struct Vertex {
 			XMFLOAT3 position;
 		};
-		//이건 머임 값이 4개나 들어가는데?
+		//이건 머임 값이 4개나 들어가는데?  / 4개 + 2개
 		struct VertexPositionUV {		//UV?
 			XMFLOAT4 position;
 			XMFLOAT2 uv;
