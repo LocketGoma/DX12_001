@@ -7,7 +7,7 @@ https://github.com/microsoft/DirectX-Graphics-Samples
 
 https://github.com/microsoft/DirectX-Graphics-Samples/tree/master/Samples/Desktop/D3D12HeterogeneousMultiadapter
 
-해당 프로젝트의 이미지를 삼각형 -> 트위터 새 모양으로 바꾸기.
+해당 프로젝트의 이미지를 삼각형 -> 트위터 새 모양으로 바꾸기. (?)
 
 참고 사이트 :
 
@@ -21,3 +21,5 @@ https://hannom.tistory.com/category/Programing/DirectX
 200223 : 작업 언제하심?
 
 200307 : 작업 언제하심 (2)
+
+200310 : 이거 설명해준 곳 없나...? 
