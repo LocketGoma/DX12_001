@@ -23,3 +23,5 @@ https://hannom.tistory.com/category/Programing/DirectX
 200307 : 작업 언제하심 (2)
 
 200310 : 이거 설명해준 곳 없나...? 
+
+200315 : 시간 너무 끌었다. 오늘까지 하고 스톱.
